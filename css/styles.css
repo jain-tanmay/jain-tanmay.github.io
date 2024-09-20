@@ -6,7 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: #fff;
@@ -22,10 +21,11 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -37,17 +37,15 @@ header nav ul li a {
 
 /* Section Styles */
 section {
-    margin: 50px;
+    padding: 50px;
     text-align: center;
 }
 
 section h2 {
     font-size: 2em;
-    color: #333;
     margin-bottom: 20px;
 }
 
-/* Projects */
 .project {
     background-color: white;
     padding: 20px;
@@ -57,41 +55,53 @@ section h2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-}
-
-input, textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+}
+
+footer ul.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul.social-media li {
+    margin: 0 15px;
+}
+
+footer ul.social-media li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Form */
+form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
 }
